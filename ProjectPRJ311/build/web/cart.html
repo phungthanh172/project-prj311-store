@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Product : </title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/heroic-features.css" rel="stylesheet">
+
+        <!-- Custom Font -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans|Oswald' rel='stylesheet' type='text/css'>
+        
+        <title>Untitled Document</title>
+    </head>
+
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container"> 
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a target="_blank" href="#" class="navbar-brand">Ahihi Store</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown" id="dropdown-option" onclick="changeDropdown('dropdown-option')">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Danh Mục
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </li> 
+                        <li><a href="#">Thông tin</a></li>
+                        <li class><a href="#" target="_blank">Cái gì đó</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown open" id="account" onclick="changeDropdown('account')">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-user"></span> 
+                                <strong>Phung Thanh</strong>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="navbar-login">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <p class="text-center">
+                                                    <span class="glyphicon glyphicon-user icon-size"></span>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p class="text-left"><strong>Phung Thanh</strong></p>
+                                                <p class="text-left small">phungthanh172@gmail.com</p>
+                                                <p class="text-left">
+                                                    <a href="#" class="btn btn-primary btn-block btn-sm">Update Data</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="navbar-login navbar-login-session">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <p>
+                                                    <a href="#" class="btn btn-danger btn-block">Log Out</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- ===================Button Login==================== --> 
+                            <a>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Log in
+                                </button>
+                            </a>
+
+                            <!-- ===================Button Login==================== --> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ========================= LOGIN DIALOG ==================================== -->         
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myModalLabel">Log in</h4>
+                    </div> <!-- /.modal-header -->
+
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="uLogin" placeholder="Login">
+                                    <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+                                </div>
+                            </div> <!-- /.form-group -->
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="uPassword" placeholder="Password">
+                                    <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                                </div> <!-- /.input-group -->
+                            </div> <!-- /.form-group -->
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div> <!-- /.checkbox -->
+                        </form>
+
+                    </div> <!-- /.modal-body -->
+
+                    <div class="modal-footer">
+                        <button class="form-control btn btn-primary">Ok</button>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+                                <span class="sr-only">progress</span>
+                            </div>
+                        </div>
+                    </div> <!-- /.modal-footer -->
+
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->                	
+        <!-- ========================= LOGIN DIALOG ==================================== --> 
+        <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Product name</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Product name</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+                                <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                        <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal</h5></td>
+                        <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Estimated shipping</h5></td>
+                        <td class="text-right"><h5><strong>$6.94</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button></td>
+                        <td>
+                        <button type="button" class="btn btn-success">
+                            Checkout <span class="glyphicon glyphicon-play"></span>
+                        </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+        <script>
+            $(document).ready(function () {
+                $('.modal-footer button').click(function () {
+                    var button = $(this);
+
+                    if (button.attr("data-dismiss") != "modal") {
+                        var inputs = $('form input');
+                        var title = $('.modal-title');
+                        var progress = $('.progress');
+                        var progressBar = $('.progress-bar');
+
+                        inputs.attr("disabled", "disabled");
+
+                        button.hide();
+
+                        progress.show();
+
+                        progressBar.animate({width: "100%"}, 100);
+
+                        progress.delay(1000)
+                                .fadeOut(600);
+
+                        button.text("Close")
+                                .removeClass("btn-primary")
+                                .addClass("btn-success")
+                                .blur()
+                                .delay(1600)
+                                .fadeIn(function () {
+                                    title.text("Log in is successful");
+                                    button.attr("data-dismiss", "modal");
+                                });
+                    }
+                });
+
+                $('#myModal').on('hidden.bs.modal', function (e) {
+                    var inputs = $('form input');
+                    var title = $('.modal-title');
+                    var progressBar = $('.progress-bar');
+                    var button = $('.modal-footer button');
+
+                    inputs.removeAttr("disabled");
+
+                    title.text("Log in");
+
+                    progressBar.css({"width": "0%"});
+
+                    button.removeClass("btn-success")
+                            .addClass("btn-primary")
+                            .text("Ok")
+                            .removeAttr("data-dismiss");
+
+                });
+            });
+
+        </script>
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
